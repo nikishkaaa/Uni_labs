@@ -1,0 +1,28 @@
+body{
+    background-color: #808080
+}
+
+a{
+    color: #964b00;
+}
+span{
+    font-weight: bold;
+    color: #ff0000
+}
+.brown_bold
+{
+    color: #964b00;
+    font-weight: bold;
+}
+.underline{
+    font-style: italic;
+    text-decoration: underline;
+}
+.img_left{
+    float: left;
+}
+.img_right{
+    float: right;
+    width: 30%;
+}
+
