@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang= "uk">
+
+<head>
+    <title>Таблиця</title>
+    <meta charset = "utf-8">
+</head>
+
+<body>
+    <h1>Лабораторна 1</h1>
+    <h2>Робота з формами</h2>
+    <h2>Виконала Нікішкіна Даша КН-32 Варіант 9<h2>
+    <a href = "index.html"> на головну </a>
+    <h3>Завдання</h3>
+    <p>Необхідно розробити веб-сторінку з формою для введення результатів поточної сесії
+    у веб-систему</p>
+    
+    
+    <form>
+        <fieldset>
+        ПІБ:<br>
+        <input type='text' name='name'><br>
+            
+        Група:<br>
+        <select NAME="група" SIZE=3 required="required">
+        <OPTION> КН-32 </option>
+        <OPTION> КН-31 </option>
+        <OPTION> АНД </option>
+        </SELECT>
+        
+        <br> Оцінка: <br>
+        <input type="number" step="1" min="0" max="100" value="10"/>
+        <br>
+        <fieldset>
+            <input type="radio" name = "zalik" value ="zalik"> Залік
+            <br>
+            <input type="radio" name = "ispyt" value ="ispyt"> Іспит
+            <br>
+        </fieldset>
+                <label for="date"> Дата: </label>
+        <input type="date" id=date name="date"/>
+        
+        <fieldset>
+        <label for="name_dyst"> Назва дисципліни: </label>
+        <select name="Назва дисципліни">
+            <option>Проектування та розробка веб-застосувань</option>
+            <option>Системний аналіз</option>
+            <option>Технології комп'ютерного проектування</option>
+            <option>Високопродуктивні обчислення</option>
+        </select>
+        </fieldset>
+        <br>
+        <fieldset>
+        <label for="Pib"> Прізвище викладача: </label>
+        <select name="Прізвище викладача">
+            <option>ас. Паткін Є.Д.</option>
+            <option>проф. Білан С.М.</option>
+            <option>ас. Гамоцька С.Л.</option>
+            <option>доц. Федусенко О.В.</option>
+        </select>
+        </fieldset>
+        
+        </fieldset>
+    </form>
+</body>
