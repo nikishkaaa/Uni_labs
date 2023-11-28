@@ -1,0 +1,43 @@
+html{
+    background-color: lightblue;
+}
+
+.body{
+    margin: 0;
+    padding: 40px;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+}
+
+.task p, ul{
+    text-align: justify;
+    display: block;
+    list-style-type: unset;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    height: 51px;
+    line-height: 51px;
+    background-color: #01996D;
+    color: white;
+    border-radius: 15px;
+    transition: opacity 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    color: white;
+}
+
+table, tr, td {
+    border: 1px solid black;
+}
