@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nikishkina</title>
+    <link rel="stylesheet" href="lab_9.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+</head>
+<body>
+    <script defer src="lab_9.js"></script>
+    <div class="wrapper">
+        <h1>Лабораторна робота №2. Основи моделі DOM та події</h1>
+        <div class="lab-list">
+            <a href=''>Лабораторна робота №1</a>
+            <a href=''>Лабораторна робота №2</a>
+            <a href=''>Лабораторна робота №3</a>
+            <a href=''>Лабораторна робота №4</a>
+        </div>
+        <div class="task">
+            <p> На Вашій сторінці є кнопка. При наведенні на неї вивести текст.
+                Ввести групу (з клавіатури), прізвище студента та курс (поля
+                вводу). Якщо неправильно вказано курс (перша цифра номеру
+                групи), вивести попередження, інакше вивести повне ім’я
+                студента
+            </p>
+        </div>
+        <hr> <br>
+        <div class="text-boxes">
+            <input
+                    type="text"
+                    placeholder="Прізвище"
+                    id="last_name"
+            >
+            <br>
+            <input
+                    type="text"
+                    placeholder="Курс"
+                    id="year"
+            >
+            <br>
+            <input
+                    type="text"
+                    placeholder="Група"
+                    id="group"
+            >
+        </div>
+        <button class="btn">Перевірити дані</button>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
