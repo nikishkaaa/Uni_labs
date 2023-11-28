@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nikishkina</title>
+    <link rel="stylesheet" href="lab_10.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+</head>
+<body>
+    <script defer src="lab_10.js"></script>
+    <div class="wrapper">
+        <h1>Лабораторна робота №3. Модель DOM</h1>
+        <div class="lab-list">
+            <a href=''>Лабораторна робота №1</a>
+            <a href=''>Лабораторна робота №2</a>
+            <a href=''>Лабораторна робота №3</a>
+            <a href=''>Лабораторна робота №4</a>
+        </div>
+        <div class="task">
+            <p>
+                Завдання 1. Дано блок з кнопкою 'закрити блок'. При натисканні на цю кнопку блок
+                повинен зникнути з форми. Кнопка розміщується всередині блоку і повинна зникнути
+                разом з ним. Блоків може бути будь-яка кількість, допускається щоб один з блоків
+                був всередині іншого. Кожен блок закриває своя кнопка.
+            </p>
+            <p>
+                Завдання 2. Дана таблиця з числами. При натисканні на комірку, вона активується і
+                стає червоного кольору. Активувати можна багато комірок. Під таблицею кнопка. При
+                натисканні цієї кнопки в абзац нижче виведіть суму активованих комірок. Реалізуйте
+                також кнопку "скинути активовані комірки".
+            </p>
+            <hr>
+        </div>
+        <br><br>
+        <div class="block-wrapper" id="block-wrapper">
+            <button onclick="hide()" class="btn">Сховати блок</button>
+        </div>
+        <br>
+        <button onclick="show()" class="btn">Повернути 1-й блок </button>
+        <div class="table-wrapper">
+            <table id="table1">
+                <tr>
+                    <td onclick="pushActive(this)">10</td>
+                    <td onclick="pushActive(this)">11</td>
+                    <td onclick="pushActive(this)">12</td>
+                </tr>
+                <tr>
+                    <td onclick="pushActive(this)">15</td>
+                    <td onclick="pushActive(this)">16</td>
+                    <td onclick="pushActive(this)">17</td>
+                </tr>
+                <tr>
+                    <td onclick="pushActive(this)">20</td>
+                    <td onclick="pushActive(this)">21</td>
+                    <td onclick="pushActive(this)">22</td>
+            </table>
+        </div>
+        <button onclick="sum()" class="btn">Порахувати суму</button>
+        <button onclick="clearActive()" class="btn">Скинути</button>
+        <div id="result"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+html{
+    background-color: lightblue;
+    padding: 1% 5%;
+}
+
+.body{
+    margin: 0;
+    padding: 40px;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    /*float: left;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    justify-content: space-evenly;
+}
+
+a, a:visited{
+    color: inherit;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #01996D;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+h1{
+    text-align: center;
+}
+
+.lab-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.task {
+    width: 850px;
+}
+
+.task p, ul{
+    text-align: justify;
+    display: block;
+    list-style-type: unset;
+    /*margin-bottom: 20px;*/
+    /*margin-left: 15px;*/
+}
+
+hr {
+    float: left;
+    border-color: #01996D;
+    width: 850px;
+}
+
+.block-wrapper {
+    height: 50px;
+    width: 300px;
+    /*border: 1px solid;*/
+}
+
+.table-wrapper {
+    font-size: 25px;
+    /*width: 300px;*/
+    margin: 25px;
+    border-collapse: collapse;
+}
+
+.table-wrapper table, th, td {
+    border: 1px solid black;
+}
+
+.table-wrapper td:active {
+    /*background-color: red;*/
+}
+
+.result {
+    width: 500px;
+    height: 30px;
+}
+
+.btn {
+    display: inline-block;
+    height: 51px;
+    width: 200px;
+    line-height: 51px;
+    background-color: #01996D;
+    color: white;
+    border-radius: 15px;
+    transition: opacity 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    color: white;
+}
+
+@media screen and (max-width: 1000px){
+    a, a:visited{
+        font-size: 19px;
+    }
+}
